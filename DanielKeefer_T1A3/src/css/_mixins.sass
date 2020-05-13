@@ -1,1 +1,20 @@
-// main: _config.sass
+// main: master.sass
+@import "./config.sass"
+@mixin easeOut
+  transition: all 1.2s ease-out
+
+@mixin background
+  @if $show-bg-img
+    &#bg-img
+      background: $home-img
+      background-attachment: fixed
+      background-size: cover
+
+      .overlay
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        width: 100%
+        height: 100%
+        background: rgba($primary-color, 0.7)

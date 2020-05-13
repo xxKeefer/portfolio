@@ -1,4 +1,4 @@
-@import ./config.sass
+@import ./mixins.sass
 
 *
   box-sizing: border-box
@@ -6,9 +6,12 @@
   padding: 0
   line-height: 1.5
   font-family: $lato
+  color: $text-default-color
 
 body
+  @include background()
   height: 100vh
+  background-color: $primary-color
 
 h1, h2, h3
   &.main-title
@@ -16,3 +19,36 @@ h1, h2, h3
     font-family: $neuton
     span
       font-family: inherit
+  &.sub-title
+    margin-bottom: 2rem
+    padding: 0.2rem 1rem
+    background: rgba(lighten($primary-color, 2), 0.5)
+a
+  color: $text-default-color
+  text-decoration: none
+
+header
+  position: fixed
+  width: 100vw
+  z-index: 2
+
+.accent-color
+  color: $accent-color
+
+main
+  padding: 4rem
+  height: 100vh
+  &#home
+    overflow: hidden
+    h1
+      margin-top: 20vh
+  .icons
+    margin-top: 1rem
+    a
+      padding: 0.6rem
+      i
+        color: inherit
+
+      &:hover
+        color: $accent-color
+        +easeOut
