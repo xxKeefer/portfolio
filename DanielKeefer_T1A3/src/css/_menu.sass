@@ -1,0 +1,34 @@
+// main: master.sass
+//hamburger icon
+$btn-location: 40px
+$btn-width: 40px
+$btn-line-height: 6px
+$btn-line-space: 6px
+
+.menu-btn
+  position: absolute
+  z-index: 3
+  right: $btn-location
+  top: $btn-location
+  cursor: pointer
+
+  +easeOut
+
+  .btn-line
+    width: $btn-width
+    height: $btn-line-height
+    margin-bottom: $btn-line-space
+    background: $text-default-color
+
+    +easeOut
+
+  //button animation x
+  &.close
+    transform: rotate(180deg)
+    .btn-line
+      &:nth-child(1)
+        transform: rotate(45deg) translate(5px, 4px)
+      &:nth-child(2)
+        opacity: 0
+      &:nth-child(3)
+        transform: rotate(-45deg) translate(14px, -11px)
