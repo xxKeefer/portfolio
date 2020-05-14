@@ -15,10 +15,12 @@ body
   background-color: $primary-color
 
 h1, h2, h3
+  color: $text-default-color
   &.main-title
     line-height: 0.8
     font-size: 5.2rem
-    font-family: $neuton
+    font-family: $nimbus
+    letter-spacing: 0.05em
     span
       font-family: inherit
   &.sub-title
@@ -43,7 +45,7 @@ main
   &#home
     overflow: hidden
     h1
-      margin-top: 15vh
+      margin-top: 5vh
   .icons
     margin-top: 1rem
     a
@@ -58,7 +60,14 @@ main
   display: grid
   grid-template: 1fr 3rem / 1fr
   justify-items: center
+  .logo
+    margin-top: 50px
+    height: 25vh
+    margin-bottom: 1rem
+    .logo-svg
+      fill: $text-default-color
   .selfie
+    color: $accent-color
     border-radius: 50%
     border: 5px $accent-color solid
     margin-bottom: 1rem
