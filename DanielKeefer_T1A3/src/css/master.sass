@@ -1,5 +1,4 @@
 @import ./mixins.sass
-@import ./menu.sass
 
 *
   box-sizing: border-box
@@ -9,31 +8,41 @@
   font-family: $lato
   color: $text-default-color
 
+@import ./menu.sass
+
 body
-  @include background()
-  height: 100vh
+  +background
+
+  height: 100%
   background-color: $primary-color
 
 h1, h2, h3
   color: $text-default-color
+
   &.main-title
     line-height: 0.8
     font-size: 5.2rem
-    font-family: $nimbus
+    font-family: $neuton
     letter-spacing: 0.05em
+
     span
       font-family: inherit
+      line-height: 1
+      margin-top: -20px
+
   &.sub-title
+    margin-top: 1rem
     margin-bottom: 2rem
-    padding: 0.2rem 1rem
-    background: rgba(lighten($primary-color, 2), 0.5)
+    // padding: 0.5rem 2rem
+    // background: rgba(lighten($primary-color, 2), 0.5)
+
 a
   color: $text-default-color
   text-decoration: none
 
 header
   position: fixed
-  width: 100vw
+  width: 100%
   z-index: 2
 
 .accent-color
@@ -41,31 +50,43 @@ header
 
 main
   padding: 2rem
-  height: 100vh
+  height: 100%
+
   &#home
     overflow: hidden
+
     h1
       margin-top: 5vh
+
   .icons
     margin-top: 1rem
+
     a
       padding: 0.6rem
+
       i
         color: inherit
 
       &:hover
         color: $accent-color
+
         +easeOut
+
 .spotlight
   display: grid
   grid-template: 1fr 3rem / 1fr
   justify-items: center
+
   .logo
-    margin-top: 50px
-    height: 25vh
+    margin-top: 2rem
+    width: 75%
+    max-width: 450px
+    height: auto
     margin-bottom: 1rem
+
     .logo-svg
       fill: $text-default-color
+
   .selfie
     color: $accent-color
     border-radius: 50%
