@@ -24,12 +24,53 @@ $btn-line-space: 6px
 
   //button animation x
   &.close
-    transform: rotate(180deg)
+    transform: rotate(180deg) translate(0px, 10px)
+
     .btn-line
       background: $accent-color
+
       &:nth-child(1)
         transform: rotate(45deg) translate(5px, 4px)
+
       &:nth-child(2)
         opacity: 0
+
       &:nth-child(3)
         transform: rotate(-45deg) translate(14px, -11px)
+
+.menu
+  width: 100%
+  height: 100vh
+  background: rgba($primary-color, 0.9)
+  transform: translateX(100%)
+  +easeOut
+
+  &.show
+    transform: translateX(0%)
+
+  &-nav
+    padding-top: 15vh
+    padding-left: 20vw
+    display: grid
+    align-items: center
+    justify-items: start
+    list-style: none
+    font-size: 2.9rem
+
+    .nav-item
+      padding: 0.5rem 0px
+
+      a
+        color: $text-default-color
+        border-bottom: 0px $text-default-color solid
+
+        +easeOut
+
+      +easeOut
+
+      &:hover
+        padding: 2.2rem 0px
+
+        a
+          color: $accent-color
+          border-bottom: 5px $accent-color solid
