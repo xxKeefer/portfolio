@@ -55,7 +55,7 @@ $btn-line-space: 5px
     align-items: center
     justify-items: start
     list-style: none
-    font-size: 2.9rem
+    font-size: 2rem
 
     .nav-item
       padding: 0.5rem 0px
@@ -74,3 +74,37 @@ $btn-line-space: 5px
         a
           color: $accent-color
           border-bottom: 5px $accent-color solid
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+  .menu
+    &-nav
+      padding-top: 10vh
+      padding-left: 0
+      padding-right: 10vw
+      justify-items: end
+      font-size: 2.5rem
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .ipsum
+    visibility: visible
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .menu
+    &-nav
+      padding-top: 7vh
+      padding-left: 0
+      padding-right: 7vw
+      justify-items: end
+      font-size: 3.5rem
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .ipsum
+    visibility: visible
