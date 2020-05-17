@@ -1,24 +1,56 @@
 // main: master.sass
+/* Devices set to landscape mode. */
+@media only screen and (orientation: landscape)
+  main
+    grid: auto-flow / 1fr 1fr
+    .wrapper, .spotlight
+      padding-top: 0
+      margin-top: 10vh
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px)
   main
     padding: 2rem 6rem
+    height: 100vh
   .wrapper
+    margin-top: 5vh
+    padding-top: 0
     text-align: left
     .main-title
       font-size: 6.5rem
     .sub-title
       font-size: 2.2rem
       font-weight: 400
-      margin-bottom: 6rem
+      margin-bottom: 2rem
   .spotlight
+    margin-top: 5rem
     grid-template: 1fr 5rem / 1fr
     .logo
       max-width: 350px
-      margin: 2.8rem 0
+      margin-bottom: 2.8rem
     .icons
       font-size: 2.4rem
+
+  @media only screen and (max-width: 991px) and (orientation: landscape)
+    main
+      padding: 6rem
+      .wrapper, .spotlight
+        margin: 0
+        padding: 10vh 0
+      .wrapper
+        padding-right: 4rem
+        border-right: 3px $text-default-color solid
+        .main-title
+          padding: 5px 0
+        .sub-title
+          margin-top: 2.8rem
+      .spotlight
+        padding-left: 4rem
+        .logo
+          width: 280px
+          margin: 0 0 2.5rem 0
+        .icons
+          font-size: 2.1rem
 
 
 

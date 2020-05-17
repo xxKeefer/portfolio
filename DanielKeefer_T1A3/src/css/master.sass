@@ -52,15 +52,14 @@ main
   padding: 2rem
   height: 100%
   display: grid
-  align-items: center
+  grid: 1fr 2fr / auto-flow
+  align-items: start
 
   &#home
     overflow: hidden
 
-    h1
-      margin-top: 7vh
-
 .wrapper
+  padding-top: 10vh
   text-align: center
 
 .spotlight
@@ -82,7 +81,9 @@ main
     margin-top: 1rem
 
     a
-      padding: 0.6rem
+      height: auto
+      width: auto
+      padding: .65rem
 
       i
         color: inherit
