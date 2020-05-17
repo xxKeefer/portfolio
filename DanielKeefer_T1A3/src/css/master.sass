@@ -33,7 +33,7 @@ h1, h2, h3
   &.sub-title
     font-size: 1.1rem
     margin-top: 1rem
-    margin-bottom: 1rem
+    margin-bottom: 3rem
 
 a
   color: $text-default-color
@@ -42,7 +42,8 @@ a
 header
   position: fixed
   width: 100%
-  z-index: 2
+  height: 0
+  z-index: 3
 
 .accent-color
   color: $accent-color
@@ -59,20 +60,6 @@ main
     h1
       margin-top: 7vh
 
-  .icons
-    margin-top: 1rem
-
-    a
-      padding: 0.6rem
-
-      i
-        color: inherit
-
-      &:hover
-        color: $accent-color
-
-        +easeOut
-
 .wrapper
   text-align: center
 
@@ -84,11 +71,28 @@ main
   .logo
     margin-top: 1rem 0
     width: 60%
-    max-width: 450px
+    max-width: 175px
     height: auto
 
     .logo-svg
       fill: $text-default-color
+
+  .icons
+    z-index: 2
+    margin-top: 1rem
+
+    a
+      padding: 0.6rem
+
+      i
+        color: inherit
+
+        +easeOut
+
+      &:hover
+        i
+          cursor: pointer
+          color: $accent-color
 
   .selfie
     color: $accent-color
