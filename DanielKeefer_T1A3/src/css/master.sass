@@ -21,21 +21,19 @@ h1, h2, h3
 
   &.main-title
     line-height: 0.8
-    font-size: 3.2rem
+    font-size: 3.8rem
     font-family: $neuton
+    font-weight: 900
     letter-spacing: 0.05em
 
     span
       font-family: inherit
       line-height: 1
-      margin-top: -20px
 
   &.sub-title
-    font-size: 0.8rem
+    font-size: 1.1rem
     margin-top: 1rem
-    margin-bottom: 2rem
-    // padding: 0.5rem 2rem
-    // background: rgba(lighten($primary-color, 2), 0.5)
+    margin-bottom: 1rem
 
 a
   color: $text-default-color
@@ -53,12 +51,13 @@ main
   padding: 2rem
   height: 100%
   display: grid
+  align-items: center
 
   &#home
     overflow: hidden
 
     h1
-      margin-top: 5vh
+      margin-top: 7vh
 
   .icons
     margin-top: 1rem
@@ -74,17 +73,19 @@ main
 
         +easeOut
 
+.wrapper
+  text-align: center
+
 .spotlight
   display: grid
   grid-template: 1fr 3rem / 1fr
   justify-items: center
 
   .logo
-    margin-top: 2rem
+    margin-top: 1rem 0
     width: 60%
     max-width: 450px
     height: auto
-    margin-bottom: 1rem
 
     .logo-svg
       fill: $text-default-color
@@ -94,3 +95,5 @@ main
     border-radius: 50%
     border: 5px $accent-color solid
     margin-bottom: 1rem
+
+@import ./media.sass
