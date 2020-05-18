@@ -79,7 +79,7 @@ $btn-line-space: 5px
           border-bottom: 5px $accent-color solid
 
 /* Devices set to landscape mode.
-@media only screen and (max-width: 599px) and (orientation: landscape)
+@media only screen and (min-width: 600px) and (orientation: landscape)
   .menu
     &-nav
       padding-top: 10vh
@@ -89,7 +89,7 @@ $btn-line-space: 5px
       font-size: 1rem
 
 /* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 600px) and (orientation: portrait)
   .menu
     &-nav
       padding-top: 10vh
