@@ -1,0 +1,24 @@
+// main: master.sass
+.blog
+  display: grid
+  justify-items: center
+  max-width: 450px
+  padding-bottom: 3rem
+  border-bottom: 3px $text-default-color solid
+  margin-bottom: 3rem
+  &-title
+    font-size: 2rem
+    color: $accent-color
+    padding: 0.5rem 0
+  &-post
+    font-size: 0.9rem
+    text-align: justify
+  &-date
+    text-transform: capitalize
+    padding-top: 0.2rem
+    color: darken($text-default-color, 40%)
+    justify-self: right
+  &:last-child
+    padding: 0
+    margin: 0
+    border-bottom:   0 red none

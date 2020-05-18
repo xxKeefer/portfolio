@@ -1,4 +1,4 @@
-// main: _mixins.sass
+// main: master.sass
 
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap")
@@ -18,3 +18,23 @@ $home-img: url(../img/chris-ried-ieic5Tq8YMk-unsplash.jpg)
 
 //variables
 $show-bg-img: true
+
+//mixins
+@mixin easeOut
+  transition: all .8s ease-out
+
+@mixin background
+  @if $show-bg-img
+    &#bg-img
+      background: $home-img
+      background-attachment: fixed
+      background-size: cover
+
+      .overlay
+        position: fixed
+        top: 0
+        right: 0
+        z-index: -1
+        width: 100%
+        height: 100%
+        background: rgba($primary-color, 0.9)

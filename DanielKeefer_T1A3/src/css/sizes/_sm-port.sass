@@ -1,0 +1,48 @@
+// main: ../_media.sass
+/* Small devices (portrait)
+@media only screen and (min-width: 500px) and (orientation: portrait)
+  main
+    .wrapper
+      text-align: left
+      .main-title
+        font-size: 5rem
+      .sub-title
+        font-size: 1.8rem
+    .spotlight
+      display: grid
+      grid: 1fr / 1fr 1fr
+      grid-gap: 60px
+      .skill
+        &:last-child
+          padding-bottom: 3rem
+          border-bottom: 3px $text-default-color solid
+          margin-bottom: 3rem
+
+    &#home
+      padding: 6rem
+      height: 100vh
+
+      .wrapper
+        padding-top: 0
+        text-align: left
+
+        .main-title
+          font-size: 6.5rem
+
+        .sub-title
+          font-size: 2.2rem
+          font-weight: 400
+          margin-bottom: 2rem
+
+      .spotlight
+        padding-top: 5rem
+        grid-template: 1fr 5rem / 1fr
+        align-items: center
+        justify-items: center
+        width: 100%
+
+        .logo
+          max-width: 450px
+
+        .icons
+          font-size: 2.4rem
