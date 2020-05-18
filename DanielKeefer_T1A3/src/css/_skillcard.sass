@@ -16,12 +16,21 @@
     margin: 0
     border-bottom:   0 red none
 
-
+main
+  &#skills
+    display: grid
+    grid: none
+    justify-items: center
 
 /* Small Devices (Landscape)
 @media only screen and (min-width: 600px) and (orientation: landscape)
-  .ipsum
-    display: none
+  main
+    &#skills
+      display: grid
+      grid: none
+      justify-items: center
+      .wrapper
+        margin-right: 3rem
 /* Small devices (portrait)
 @media only screen and (min-width: 600px) and (orientation: portrait)
   main
@@ -40,11 +49,12 @@
   .ipsum
     display: none
 /*Medium Devices (landscape)
-@media only screen and (max-width: 768px) and (orientation: landscape)
+@media only screen and (min-width: 768px) and (orientation: landscape)
   main
     &#skills
       display: grid
-      grid: auto-flow /  1fr
+      grid: none
+      justify-items: center
       .wrapper
         margin-right: 3rem
 /* Large devices (portrait)
