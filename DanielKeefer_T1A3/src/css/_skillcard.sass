@@ -1,0 +1,69 @@
+// main: master.sass
+.skill
+  max-width: 450px
+  padding-bottom: 3rem
+  border-bottom: 3px $text-default-color solid
+  margin-bottom: 3rem
+  &-icon
+    font-size: 7rem
+    color: $accent-color
+  &-name
+    font-family: $neuton
+    font-size: 2.1rem
+    padding-bottom: 1rem
+  &:last-child
+    padding: 0
+    margin: 0
+    border-bottom:   0 red none
+
+
+
+/* Small Devices (Landscape)
+@media only screen and (min-width: 600px) and (orientation: landscape)
+  .ipsum
+    display: none
+/* Small devices (portrait)
+@media only screen and (min-width: 600px) and (orientation: portrait)
+  .spotlight
+    display: grid
+    grid: 1fr / 1fr 1fr
+    grid-gap: 60px
+    .skill
+      &:last-child
+        padding-bottom: 3rem
+        border-bottom: 3px $text-default-color solid
+        margin-bottom: 3rem
+/* Medium devices (portrait)
+@media only screen and (min-width: 768px) and (orientation: portrait)
+  .ipsum
+    display: none
+/*Medium Devices (landscape)
+@media only screen and (max-width: 768px) and (orientation: landscape)
+  main
+    &#skills
+      display: grid
+      grid: auto-flow /  1fr
+      .wrapper
+        margin-right: 3rem 
+/* Large devices (portrait)
+@media only screen and (min-width: 992px) and (orientation: portrait)
+  .ipsum
+    display: none
+/* Large devices (landscape)
+@media only screen and (min-width: 992px) and (orientation: landscape)
+  main
+    padding: 2.5rem
+    grid: auto-flow /40vw 1fr
+    .spotlight
+      display: grid
+      grid: 1fr / 1fr 1fr
+      grid-gap: 2vw
+      .skill
+        &:last-child
+          padding-bottom: 3rem
+          border-bottom: 3px $text-default-color solid
+          margin-bottom: 3rem
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px)
+  .ipsum
+    display: none
