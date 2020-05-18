@@ -1,0 +1,93 @@
+// main: ../_media.sass
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  line-height: 1.2
+  font-family: $lato
+  color: $text-default-color
+
+@import ../menu.sass
+
+body
+  +background
+
+  height: auto
+  background-color: $primary-color
+
+h1, h2, h3
+  color: $text-default-color
+
+  &.main-title
+    line-height: 0.8
+    font-size: 3.8rem
+    font-family: $neuton
+    font-weight: 900
+    letter-spacing: 0.05em
+
+    span
+      font-family: inherit
+      line-height: 1
+
+  &.sub-title
+    font-size: 1.1rem
+    margin-top: 1rem
+    margin-bottom: 3rem
+
+a
+  color: $text-default-color
+  text-decoration: none
+
+header
+  position: fixed
+  width: 100%
+  height: 0
+  z-index: 3
+
+.accent-color
+  color: $accent-color
+
+main
+  padding: 2rem
+  height: 100%
+  display: grid
+  grid: none
+  justify-items: center
+
+  &#home
+    overflow: hidden
+
+.wrapper
+  padding-top: 5vh
+  text-align: center
+
+.spotlight
+  text-align: center
+
+  .logo
+    margin-top: 1rem 0
+    width: 60%
+    max-width: 175px
+    height: auto
+
+    .logo-svg
+      fill: $text-default-color
+
+  .icons
+    z-index: 2
+    margin-top: 1rem
+
+    a
+      height: auto
+      width: auto
+      padding: .65rem
+
+      i
+        color: inherit
+
+        +easeOut
+
+      &:hover
+        i
+          cursor: pointer
+          color: $accent-color

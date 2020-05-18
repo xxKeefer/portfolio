@@ -1,0 +1,67 @@
+// main: ../_media.sass
+/* Large devices (landscape)
+@media only screen and (min-width: 992px) and (orientation: landscape)
+  main
+    padding: 2.5rem
+    grid: (auto-flow / 40vw) 1fr
+
+    .wrapper
+      text-align: left
+      border-right: 3px $text-default-color solid
+
+      .main-title
+        font-size: 6rem
+        line-height: 1
+
+      .sub-title
+        padding-top: 0.6rem
+        padding-right: 2rem
+        font-size: 1.9rem
+
+    .spotlight
+      display: grid
+      grid: 1fr / 1fr 1fr
+      grid-gap: 2vw
+
+      .skill
+        &:last-child
+          padding-bottom: 3rem
+          border-bottom: 3px $text-default-color solid
+          margin-bottom: 3rem
+
+    &#home
+      grid: 1fr / 1fr 1fr
+      padding: 6rem
+
+      .wrapper, .spotlight
+        height: 100%
+        padding: 10vh 0
+        align-self: center
+
+      .wrapper
+        padding-right: 2rem
+        padding-left: 2rem
+        border-right: 3px $text-default-color solid
+
+        .main-title
+          font-size: 5.5rem
+          padding: 5px 0
+
+        .sub-title
+          margin-top: 2.8rem
+          font-size: 1.8rem
+
+      .spotlight
+        padding-left: 4rem
+        grid: none
+        align-items: center
+        justify-items: center
+        width: 100%
+
+        .logo
+          max-width: 550px
+          width: 20rem
+          margin: 0 0 2.5rem 0
+
+        .icons
+          font-size: 2.1rem
