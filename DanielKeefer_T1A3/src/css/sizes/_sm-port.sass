@@ -4,19 +4,38 @@
   main
     .wrapper
       text-align: left
+
       .main-title
         font-size: 5rem
+
       .sub-title
         font-size: 1.8rem
+
     .spotlight
       display: grid
       grid: 1fr / 1fr 1fr
       grid-gap: 60px
+
       .skill
         &:last-child
           padding-bottom: 3rem
           border-bottom: 3px $text-default-color solid
           margin-bottom: 3rem
+
+      .contact
+        grid: none
+
+      .contact-email, .contact-resume
+        grid-gap: 1.5rem
+        padding-bottom: 3rem
+
+        .icon
+          font-size: 2.8rem
+          padding-top: 0rem
+
+          &-label
+            padding-left: 0.7rem
+            font-size: 1.7rem
 
   .one-page
     padding: 6rem

@@ -29,39 +29,67 @@
           border-bottom: 3px $text-default-color solid
           margin-bottom: 3rem
 
-  .one-page
-    grid: 1fr / 1fr 1fr
-    padding: 6rem
+      .contact-email, .contact-resume
+        grid-gap: 1.5rem
+        padding-bottom: 3rem
 
-    .wrapper, .spotlight
-      height: 100%
-      padding: 10vh 0
-      align-self: center
+        .icon
+          font-size: 2.8rem
+          padding-top: 0rem
 
-    .wrapper
-      padding-right: 2rem
-      padding-left: 2rem
-      border-right: 3px $text-default-color solid
+          &-label
+            padding-left: 0.7rem
+            font-size: 1.7rem
+    &.one-page
+      height: 100vh
+      .spotlight
+        grid: none
+        .contact
+          &-container
+            grid: 3fr 1fr 1fr 1fr / 1fr
+            grid-gap: 0
+            align-items: start
+            justify-items: center
+            .logo
+              display: inline
+              width: 100%
+              &-svg
+                width: 60%
+                max-width: 450px
+                fill: $accent-color
+    &#home
+      grid: 1fr / 1fr 1fr
+      padding: 6rem
 
-      .main-title
-        font-size: 5.5rem
-        padding: 5px 0
+      .wrapper, .spotlight
+        height: 100%
+        padding: 10vh 0
+        align-self: center
 
-      .sub-title
-        margin-top: 2.8rem
-        font-size: 1.8rem
+      .wrapper
+        padding-right: 2rem
+        padding-left: 2rem
+        border-right: 3px $text-default-color solid
 
-    .spotlight
-      padding-left: 4rem
-      grid: none
-      align-items: center
-      justify-items: center
-      width: 100%
+        .main-title
+          font-size: 5.5rem
+          padding: 5px 0
 
-      .logo
-        max-width: 550px
-        width: 20rem
-        margin: 0 0 2.5rem 0
+        .sub-title
+          margin-top: 2.8rem
+          font-size: 1.8rem
 
-      .icons
-        font-size: 2.1rem
+      .spotlight
+        padding-left: 4rem
+        grid: none
+        align-items: center
+        justify-items: center
+        width: 100%
+
+        .logo
+          max-width: 550px
+          width: 20rem
+          margin: 0 0 2.5rem 0
+
+        .icons
+          font-size: 2.1rem

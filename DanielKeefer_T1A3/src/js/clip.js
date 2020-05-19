@@ -12,7 +12,7 @@ email.addEventListener('', clip);
 function clip(){
   let clipable = document.querySelector('.clipable');
   navigator.clipboard.writeText(clipable.textContent)
-  clipable.innerHTML = "Copied to clipboard!"
+  clipable.innerHTML = "Copied to the clipboard!"
   setTimeout( resetHTML, 3000)
 };
 
