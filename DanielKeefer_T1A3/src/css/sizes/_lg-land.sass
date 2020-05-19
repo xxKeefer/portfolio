@@ -3,14 +3,14 @@
 @media only screen and (min-width: 992px) and (orientation: landscape)
   main
     padding: 2.5rem
-    grid: (auto-flow / 40vw) 1fr
+    grid: auto / 40vw 1fr
 
     .wrapper
       text-align: left
       border-right: 3px $text-default-color solid
 
       .main-title
-        font-size: 6rem
+        font-size: 5rem
         line-height: 1
 
       .sub-title
@@ -20,8 +20,11 @@
 
     .spotlight
       display: grid
-      grid: 1fr / 1fr 1fr
-      grid-gap: 2vw
+      grid: auto / 1fr 1fr
+      row-gap: 0
+      column-gap: 5vw
+      grid-template-rows: auto 5fr
+      height: fit-content
 
       .skill
         &:last-child
@@ -58,7 +61,7 @@
                 max-width: 450px
                 fill: $accent-color
     &#home
-      grid: 1fr / 1fr 1fr
+      grid: auto / 1fr 1fr
       padding: 6rem
 
       .wrapper, .spotlight
