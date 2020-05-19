@@ -20,7 +20,7 @@ h1, h2, h3
 
   &.main-title
     line-height: 0.8
-    font-size: 3.8rem
+    font-size: 3.2rem
     font-family: $neuton
     font-weight: 900
     letter-spacing: 0.05em
@@ -32,7 +32,7 @@ h1, h2, h3
   &.sub-title
     font-size: 1.1rem
     margin-top: 1rem
-    margin-bottom: 3rem
+    margin-bottom: 1.5rem
 
 a
   color: $text-default-color
@@ -53,21 +53,22 @@ main
   display: grid
   grid: none
   justify-items: center
+  min-height: 100vh
 
-  &#home
-    overflow: hidden
+.one-page
+  overflow: hidden
 
 .wrapper
-  padding-top: 5vh
+  padding-top: 8vh
   text-align: center
 
 .spotlight
   text-align: center
 
   .logo
-    margin-top: 1rem 0
+    margin: 1rem 0
     width: 60%
-    max-width: 175px
+    max-width: 250px
     height: auto
 
     .logo-svg
@@ -75,7 +76,7 @@ main
 
   .icons
     z-index: 2
-    margin-top: 1rem
+    font-size: 1.2rem
 
     a
       height: auto

@@ -1,0 +1,78 @@
+// main: master.sass
+.spotlight
+  grid: none
+
+.contact
+  width: 100%
+  height: 100%
+  display: grid
+  grid: none
+  align-items: center
+  justify-items: center
+
+  .contact-form
+    display: none
+
+  &-container
+    display: grid
+    grid: 1fr 1fr / 1fr
+    grid-gap: 1rem
+    padding-bottom: 1.5rem
+
+    .logo
+      display: none
+
+    .contact-email, .contact-resume
+      display: grid
+      grid: 1fr / 2rem 1fr
+      grid-gap: 0.5rem
+      align-items: center
+      justify-items: center
+      padding-bottom: 1.3rem
+      width: 100%
+
+      .icon
+        font-size: 1.8rem
+        padding-top: 0.3rem
+
+        +easeOut
+
+        &-label
+          padding-left: 0.5rem
+          font-size: 1rem
+          font-family: $lato
+          justify-self: start
+
+          +easeOut
+
+      &:hover
+        cursor: pointer
+
+        .icon, .icon-label
+          color: $accent-color
+
+  // &-container
+  //   display: grid
+  //   grid: 1fr / 2rem 1fr
+  //   grid-gap: 0.5rem
+  //   align-items: center
+  //   justify-items: center
+  //   padding-bottom: 1.3rem
+  //   .icon
+  //     font-size: 1.8rem
+  //     padding-top: 0.3rem
+  //     &-label
+  //       padding-left: .5rem
+  //       font-size: 1rem
+  //       font-family: $lato
+  //       justify-self: start
+  // .email
+  //   cursor: pointer
+  //   +easeOut
+  //   &:hover ~ .email
+  //     color: $accent-color
+  // .resume
+  //   cursor: pointer
+  //   +easeOut
+  //   &:hover ~ .resume
+  //     color: $accent-color

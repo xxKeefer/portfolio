@@ -4,45 +4,64 @@
   main
     .wrapper
       text-align: left
+
       .main-title
         font-size: 5rem
+
       .sub-title
         font-size: 1.8rem
+
     .spotlight
       display: grid
-      grid: 1fr / 1fr 1fr
+      grid: auto / 1fr 1fr
       grid-gap: 60px
+
       .skill
         &:last-child
           padding-bottom: 3rem
           border-bottom: 3px $text-default-color solid
           margin-bottom: 3rem
 
-    &#home
-      padding: 6rem
-      height: 100vh
+      .contact
+        grid: none
 
-      .wrapper
-        padding-top: 0
-        text-align: left
+      .contact-email, .contact-resume
+        grid-gap: 1.5rem
+        padding-bottom: 3rem
 
-        .main-title
-          font-size: 6.5rem
+        .icon
+          font-size: 2.8rem
+          padding-top: 0rem
 
-        .sub-title
-          font-size: 2.2rem
-          font-weight: 400
-          margin-bottom: 2rem
+          &-label
+            padding-left: 0.7rem
+            font-size: 1.7rem
 
-      .spotlight
-        padding-top: 5rem
-        grid-template: 1fr 5rem / 1fr
-        align-items: center
-        justify-items: center
-        width: 100%
+  .one-page
+    padding: 6rem
+    height: 100vh
 
-        .logo
-          max-width: 450px
+    .wrapper
+      padding-top: 0
+      text-align: left
 
-        .icons
-          font-size: 2.4rem
+      .main-title
+        font-size: 6.5rem
+
+      .sub-title
+        font-size: 2.2rem
+        font-weight: 400
+        margin-bottom: 2rem
+
+    .spotlight
+      padding-top: 5rem
+      grid: 1fr 5rem / auto;
+      align-items: center
+      justify-items: center
+      width: 100%
+
+      .logo
+        max-width: 450px
+
+      .icons
+        font-size: 2.4rem
