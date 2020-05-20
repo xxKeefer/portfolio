@@ -3,9 +3,7 @@
   display: grid
   justify-items: center
   max-width: 450px
-  padding-bottom: 3rem
-  border-bottom: 3px $text-default-color solid
-  margin-bottom: 3rem
+  +lowerHorzRule(true)
   &-title
     font-size: 2rem
     color: $accent-color
@@ -19,6 +17,4 @@
     color: darken($text-default-color, 40%)
     justify-self: right
   &:last-child
-    padding: 0
-    margin: 0
-    border-bottom:   0 red none
+    +lowerHorzRule(false)
