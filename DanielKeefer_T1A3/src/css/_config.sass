@@ -9,10 +9,10 @@ $neuton: "Neuton", serif
 $nimbus: "Nimbus Roman", serif
 
 //colours $
-$light-color: #DADDD8
-$dark-color: #40434E
+$light-color: #cdd1cb
+$dark-color: #28292e
 $dark-accent: #ff6d00
-$light-accent: #5f0f40
+$light-accent: #610179
 
 //images
 $home-img: url(../img/chris-ried-ieic5Tq8YMk-unsplash.jpg)
@@ -31,7 +31,7 @@ $show-bg-img: true
 @mixin lowerHorzRule($state)
   @if $state
     padding-bottom: 3rem
-    border-bottom: 3px $light-color solid
+    border-bottom: 3px var(--color-text) solid
     margin-bottom: 3rem
   @else
     border-bottom-style: none
@@ -47,12 +47,3 @@ $show-bg-img: true
       background: $home-img
       background-attachment: fixed
       background-size: cover
-
-      .overlay
-        position: fixed
-        top: 0
-        right: 0
-        z-index: -1
-        width: 100%
-        height: 100%
-        background: rgba($dark-color, 0.9)
