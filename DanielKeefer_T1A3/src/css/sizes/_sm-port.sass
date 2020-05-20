@@ -12,15 +12,12 @@
         font-size: 1.8rem
 
     .spotlight
-      display: grid
-      grid: auto / 1fr 1fr
+      +twoColumns
       grid-gap: 60px
 
       .skill
         &:last-child
-          padding-bottom: 3rem
-          border-bottom: 3px $text-default-color solid
-          margin-bottom: 3rem
+          +lowerHorzRule(true)
 
       .contact
         grid: none

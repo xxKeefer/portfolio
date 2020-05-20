@@ -1,9 +1,7 @@
 // main: master.sass
 .skill
   max-width: 450px
-  padding-bottom: 3rem
-  border-bottom: 3px $text-default-color solid
-  margin-bottom: 3rem
+  +lowerHorzRule(true)
   &-icon
     font-size: 7rem
     color: $accent-color
@@ -12,6 +10,4 @@
     font-size: 2.1rem
     padding-bottom: 1rem
   &:last-child
-    padding: 0
-    margin: 0
-    border-bottom:   0 red none
+    +lowerHorzRule(false)

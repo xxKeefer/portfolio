@@ -23,6 +23,19 @@ $show-bg-img: true
 @mixin easeOut
   transition: all .8s ease-out
 
+@mixin twoColumns
+  display: grid
+  grid: auto / 1fr 1fr
+
+@mixin lowerHorzRule($state)
+  @if $state
+    padding-bottom: 3rem
+    border-bottom: 3px $text-default-color solid
+    margin-bottom: 3rem
+  @else
+    border-bottom-style: none
+
+
 @mixin background
   @if $show-bg-img
     &#bg-img

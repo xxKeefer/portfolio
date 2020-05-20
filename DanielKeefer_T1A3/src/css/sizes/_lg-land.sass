@@ -12,6 +12,7 @@
       .main-title
         font-size: 5rem
         line-height: 1
+        padding-right: 2rem
 
       .sub-title
         padding-top: 0.6rem
@@ -19,8 +20,7 @@
         font-size: 1.9rem
 
     .spotlight
-      display: grid
-      grid: auto / 1fr 1fr
+      +twoColumns
       row-gap: 0
       column-gap: 5vw
       grid-template-rows: auto 5fr
@@ -28,9 +28,7 @@
 
       .skill
         &:last-child
-          padding-bottom: 3rem
-          border-bottom: 3px $text-default-color solid
-          margin-bottom: 3rem
+          +lowerHorzRule(true)
 
       .contact-email, .contact-resume
         grid-gap: 1.5rem
@@ -60,7 +58,7 @@
                 width: 60%
                 max-width: 450px
     &#home
-      grid: auto / 1fr 1fr
+      +twoColumns
       padding: 6rem
 
       .wrapper, .spotlight
