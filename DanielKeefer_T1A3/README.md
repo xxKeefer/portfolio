@@ -18,29 +18,29 @@ Features include:
 HTML, CSS, SASS, Javascript
 
 ######////// Sitemap
-![Sitemap](./sitemap.png)
+![Sitemap](./doc/sitemap.png)
 
 ######////// Screenshots
 **Skills page - mobile**
 
-![skills page - mobile](./images/skill_sm.png)
+![skills page - mobile](./doc/images/skill_sm.png)
 
 **Skills page - tablet**
 
-![skills page - tablet](./images/skill_md.png)
+![skills page - tablet](./doc/images/skill_md.png)
 
 **Skills page - desktop**
 
-![skills page - desktop](./images/skill_lg.png)
+![skills page - desktop](./doc/images/skill_lg.png)
 
 **Menu / Darkmode - desktop**
 
-![Menu / Darkmode - desktop](./images/menu_darkmode.png)
+![Menu / Darkmode - desktop](./doc/images/menu_darkmode.png)
 
 **Email to Clipboard - desktop**
 
-![Menu / Darkmode - desktop](./images/clipped_darkmode.png)
+![Menu / Darkmode - desktop](./doc/images/clipped_darkmode.png)
 
 **Contact page - mobile**
 
-![Contact page - mobile](./images/contact_sm_darkmode.png)
+![Contact page - mobile](./doc/images/contact_sm_darkmode.png)
